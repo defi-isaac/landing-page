@@ -1,52 +1,149 @@
 * {
-    background-color: #1a1919;
     color: white;
 }
 
+body {
+    background-color: #1a1919;
+}
+
+.content h2 {
+    text-align: center;
+}
+
+/* Header */
 .header {
     display: flex;
-    border: 2px solid green;
+    justify-content: space-between;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
-img {
-    
+.header-logo {
+    font-size: 25px;
 }
 
+.links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.links ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    gap: 16px;
+}
+
+.links a {
+    text-decoration: none;
+}
+
+/* Intro */
 .logo {
     border-radius: 50%;
     border: 10px solid white;
-    width: 15em;
+    width: 20em;
 }
 
 .content {
     display: flex;
-    flex-direction: row;
-    border: 2px solid blue;
+    flex-direction: column;
 }
 
 .intro {
     display: flex;
-    border: 2px solid orange;
     flex: 1;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 4em;
+    gap: 6em;
+    padding-top: 8em;
+    padding-bottom: 12.5em;
 }
 
 .intro .right {
-    border: 2px solid purple;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
 
-.right h1 {
-    font-size: 70px;
+.name {
+    font-size: 90px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    flex-shrink: 0;
+}
+
+.description {
+    font-family: Georgia, 'Times New Roman', Times, serif;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-.right p {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+/* Experience / job */
+
+.experience {
+    background-color: white;
 }
+
+.job-logo {
+    width: 12em;
+    border: 5px solid darkgrey;
+    border-radius: 25%;
+}
+
+.job-role {
+    text-align: center;
+    color: black;
+}
+
+.info {
+    background-color: white;
+}
+
+#experience {
+    color: black;
+    padding: 10px;
+}
+
+.all-experiences {
+    display: flex;
+    justify-content: center;
+    gap: 5em;
+    padding: 3em;
+}
+
+/* Quote section */
+
+.quote-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50em;
+}
+
+.quote {
+    display:flex;
+    flex-direction: column;
+    margin: 2em;
+}
+
+.quote p {
+    align-self: flex-end;
+    margin: 1em;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.quote h3 {
+    font-size: 69px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 16px;
+    margin-block-start: 0.2em;
+    margin-block-end: 0.2em;
+}
+
+
+
 
